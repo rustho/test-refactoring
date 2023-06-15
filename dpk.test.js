@@ -1,4 +1,5 @@
 const crypto = require("crypto");
+const { deterministicPartitionKey } = require("./dpk");
 
 describe("deterministicPartitionKey", () => {
   let originalCreateHash;
