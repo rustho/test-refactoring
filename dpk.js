@@ -21,5 +21,7 @@ exports.deterministicPartitionKey = (event) => {
     candidate = createHash("sha3-512").update(candidate).digest("hex");
   }
 
+  
+
   return candidate || TRIVIAL_PARTITION_KEY;
 };
